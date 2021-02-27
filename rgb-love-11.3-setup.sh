@@ -10,5 +10,5 @@ wget https://raw.githubusercontent.com/tavuntu/rgb-love2d/master/love-11.3.tar.g
 # build and compile
 tar -xf love-11.3.tar.gz
 rm love-11.3.tar.gz
-ln -s love-11.3/love /usr/bin/
+sudo ln -s /home/pi/love-11.3/src/love /usr/bin/
 echo 'Love2D is now available by just typing the command love'
