@@ -16,7 +16,7 @@ wget https://raw.githubusercontent.com/tavuntu/rgb-love2d/master/love-11.3.tar.g
 tar -xf love-11.3.tar.gz
 
 sudo ln -s /home/pi/love-11.3/src/love /usr/bin/
-chmod +x __RefreshRoms
+chmod +x __RefreshRoms.sh
 mv __RefreshRoms.sh ~/RetroPie/roms/ports/Love2D/
 /RetroPie/roms/ports/Love2D/__RefreshRoms.sh
 
