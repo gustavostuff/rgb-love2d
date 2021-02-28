@@ -7,6 +7,8 @@ pkg-config libfreetype6-dev libluajit-5.1-dev libphysfs-dev libsdl2-dev \
 libopenal-dev libogg-dev libvorbis-dev libmodplug-dev libmpg123-dev \
 libtheora-dev
 
+cd ~
+
 # get love (precompiled)
 wget https://raw.githubusercontent.com/tavuntu/rgb-love2d/master/love-11.3.tar.gz
 
@@ -15,12 +17,14 @@ tar -xf love-11.3.tar.gz
 
 sudo ln -s /home/pi/love-11.3/src/love /usr/bin/
 chmod +x __RefreshRoms
-cp __RefreshRoms ~/RetroPie/roms/ports/Love2D/
-./__RefreshRoms
+mv __RefreshRoms.sh ~/RetroPie/roms/ports/Love2D/
+/RetroPie/roms/ports/Love2D/__RefreshRoms.sh
 
 echo "*******************************************************"
-echo "${green}Setup completed!${default}"
-echo "${green}Go to RGB-Pi OS options screen and do a game search, you'll find something in Ports${default}"
+echo -e "${green}Setup completed!${default}"
+echo -e "${green}Go to RGB-Pi OS options screen and do a game search, you'll find something in Ports${default}"
+echo ''
+echo 'For more info go to github.com/tavuntu/rgb-love2d'
 
 # some cleaning
 rm love-11.3.tar.gz
