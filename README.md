@@ -18,10 +18,22 @@ wget https://raw.githubusercontent.com/tavuntu/rgb-love2d/master/rgb-love-11.3-s
 
 Games (.love files) should be placed in ~/RetroPie/roms/love2d/ and everytime new ones are added, you must do:
 
-* Run __RefreshRoms (from RGB-Pi OS, in Ports)
-* Do a game search again
+1. Run __RefreshRoms (from RGB-Pi OS, in Ports)
+2. Do a game search again
 
-When developing a game, consider that, inside RGB-Pi OS, it will run at 320x240.
+## Considerations
+
+* Unlike the [RGB-Quake](https://github.com/tavuntu/rgb-quake) project, this one has no direct integration with RetroArch, so you should have in mind:
+
+  * A way to exit the game with (usually with ```love.event.quit()```) is needed in order to return to the RGB-Pi UI
+  * Because of the above, a way to globally map Joysticks is needed (not ready yet)
+  * **__RefreshRoms** creates a ```<lovegame>.love.sh``` script (in ```~/RetroPie/roms/ports/Love2D/```) for every ```<lovegame>.love``` (in ```~/RetroPie/roms/love2d/```), containing the following:
+
+```shell
+#!/bin/bash
+love ~/RetroPie/roms/love2d/<lovegame>
+```
+* When developing a game, consider that, inside RGB-Pi OS, it will run at 320x240 (there is no **hdmi_timings** swap so it uses the same as in ```/boot/config.txt```)
 
 ### Some Links
 
