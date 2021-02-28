@@ -21,7 +21,7 @@ Games (.love files) should be placed in ~/RetroPie/roms/love2d/ and everytime ne
 1. Run __RefreshRoms (from RGB-Pi OS, in Ports)
 2. Do a game search again
 
-### Other Considerations
+### Notes for developers
 
 * Unlike the [RGB-Quake](https://github.com/tavuntu/rgb-quake) project, this one has no direct integration with RetroArch, so you should have in mind:
 
