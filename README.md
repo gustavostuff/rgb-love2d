@@ -8,7 +8,7 @@
 * Run:
 
 ```
-wget https://raw.githubusercontent.com/tavuntu/rgb-love2d/master/rgb-love2d-setup.sh && chmod +x rgb-love2d-setup.sh && ./rgb-love2d-setup.sh
+wget https://raw.githubusercontent.com/tavuntu/rgb-love2d/master/rgb-love-11.3-setup.sh && chmod +x rgb-love-11.3-setup.sh && ./rgb-love-11.3-setup.sh
 ```
 * Follow the instructions and enjoy!
 
