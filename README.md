@@ -4,7 +4,8 @@
 
 ### Installation
 
-* Connect to your Raspberry Pi via SSH/Putty
+* Your Raspberry Pi should be connected to the internet
+* Connect to your Raspberry Pi via SSH/Putty from another computer
 * Run:
 
 ```
