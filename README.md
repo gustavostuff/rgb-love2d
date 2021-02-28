@@ -34,7 +34,7 @@ Games (.love files) should be placed in ~/RetroPie/roms/love2d/ and everytime ne
 #!/bin/bash
 love ~/RetroPie/roms/love2d/<your_game>.love
 ```
-* When developing a game, consider that, inside RGB-Pi OS, it will run at 320x240 (there is no **hdmi_timings** swap so it uses the same as in ```/boot/config.txt```)
+* When developing a game, consider that it will run at 320x240 in RGB-Pi OS (there is no **hdmi_timings** swap so it uses the same as in ```/boot/config.txt```). This may change in future versions of this setup.
 
 ### Some Links
 
