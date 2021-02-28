@@ -19,12 +19,13 @@ tar -xf love-11.3.tar.gz
 
 sudo ln -s /home/pi/love-11.3/src/love /usr/bin/
 chmod +x __RefreshRoms.sh
+echo -e "${green}You should see now a green screen in your CRT, go there please.${default}"
 ./__RefreshRoms.sh
 mv __RefreshRoms.sh ~/RetroPie/roms/ports/Love2D/
 
 echo "*******************************************************"
 echo -e "${green}Setup completed!${default}"
-echo -e "${green}Go to RGB-Pi OS options screen and do a game search, you'll find something in Ports${default}"
+echo -e "${green}Go to RGB-Pi OS options screen and do a game search, you'll find something in Ports -> Love2D${default}"
 echo ''
 echo 'For more info go to github.com/tavuntu/rgb-love2d'
 
