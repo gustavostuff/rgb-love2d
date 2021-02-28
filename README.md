@@ -14,14 +14,14 @@ wget https://raw.githubusercontent.com/tavuntu/rgb-love2d/master/rgb-love-11.3-s
 
 ---
 
-## Adding new games
+### Adding new games
 
 Games (.love files) should be placed in ~/RetroPie/roms/love2d/ and everytime new ones are added, you must do:
 
 1. Run __RefreshRoms (from RGB-Pi OS, in Ports)
 2. Do a game search again
 
-## Considerations
+### Considerations
 
 * Unlike the [RGB-Quake](https://github.com/tavuntu/rgb-quake) project, this one has no direct integration with RetroArch, so you should have in mind:
 
