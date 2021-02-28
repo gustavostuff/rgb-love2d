@@ -10,15 +10,15 @@
 ```
 wget https://raw.githubusercontent.com/tavuntu/rgb-love2d/master/rgb-love-11.3-setup.sh && chmod +x rgb-love-11.3-setup.sh && ./rgb-love-11.3-setup.sh
 ```
-* Follow the instructions and enjoy! (Some demos will be placed in Ports)
+* Follow the instructions and enjoy! (Some demos will be placed in Ports -> Love2D)
 
 ---
 
 ### Adding new games
 
-Games (.love files) should be placed in ~/RetroPie/roms/love2d/ and everytime new ones are added, you must do:
+Games (.love files) should be placed in ~/RetroPie/roms/love2d/ and everytime new ones are added, you must:
 
-1. Run __RefreshRoms (from RGB-Pi OS, in Ports)
+1. Run **__RefreshRoms** (from RGB-Pi OS, in Ports -> Love2D)
 2. Do a game search again
 
 ### Notes for developers
@@ -31,7 +31,7 @@ Games (.love files) should be placed in ~/RetroPie/roms/love2d/ and everytime ne
 
 ```shell
 #!/bin/bash
-love ~/RetroPie/roms/love2d/<your_game>
+love ~/RetroPie/roms/love2d/<your_game>.love
 ```
 * When developing a game, consider that, inside RGB-Pi OS, it will run at 320x240 (there is no **hdmi_timings** swap so it uses the same as in ```/boot/config.txt```)
 
