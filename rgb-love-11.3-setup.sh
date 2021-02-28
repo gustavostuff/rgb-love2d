@@ -12,7 +12,7 @@ wget https://raw.githubusercontent.com/tavuntu/rgb-love2d/master/love-11.3.tar.g
 
 # setup love and love games (demos)
 tar -xf love-11.3.tar.gz
-rm love-11.3.tar.gz
+
 sudo ln -s /home/pi/love-11.3/src/love /usr/bin/
 chmod +x __RefreshRoms
 cp __RefreshRoms ~/RetroPie/roms/ports/Love2D/
@@ -21,3 +21,7 @@ cp __RefreshRoms ~/RetroPie/roms/ports/Love2D/
 echo "*******************************************************"
 echo "${green}Setup completed!${default}"
 echo "${green}Go to RGB-Pi OS options screen and do a game search, you'll find something in Ports${default}"
+
+# some cleaning
+rm love-11.3.tar.gz
+rm rgb-love-11.3-setup.sh
