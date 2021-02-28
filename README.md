@@ -26,7 +26,7 @@ Games (.love files) should be placed in ~/RetroPie/roms/love2d/ and everytime ne
 * Unlike the [RGB-Quake](https://github.com/tavuntu/rgb-quake) project, this one has no direct integration with RetroArch, so you should have in mind:
 
   * A way to exit the game (usually with ```love.event.quit()```) is needed in order to return to the RGB-Pi UI
-  * Because of the above, a way to globally map Joysticks is not there (yet)
+  * Because of the RetroPie thing, A way to globally map Joysticks is not there (yet)
   * **__RefreshRoms** creates a ```<your_game>.love.sh``` script (in ```~/RetroPie/roms/ports/Love2D/```) for every ```<your_game>.love``` (in ```~/RetroPie/roms/love2d/```), containing the following:
 
 ```shell
