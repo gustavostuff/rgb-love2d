@@ -17,7 +17,7 @@ wget https://raw.githubusercontent.com/tavuntu/rgb-love2d/master/rgb-love-11.3-s
 
 ### Adding new games
 
-Games (.love files) should be placed in ~/RetroPie/roms/love2d/ and everytime new ones are added, you must:
+Games (.love files) should be placed in ~/RetroPie/roms/love2d/ and, after doing that, you must:
 
 1. Run **__RefreshRoms** (from RGB-Pi OS, in Ports -> Love2D)
 2. Do a game search again
