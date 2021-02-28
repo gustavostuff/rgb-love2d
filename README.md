@@ -25,13 +25,13 @@ Games (.love files) should be placed in ~/RetroPie/roms/love2d/ and everytime ne
 
 * Unlike the [RGB-Quake](https://github.com/tavuntu/rgb-quake) project, this one has no direct integration with RetroArch, so you should have in mind:
 
-  * A way to exit the game with (usually with ```love.event.quit()```) is needed in order to return to the RGB-Pi UI
-  * Because of the above, a way to globally map Joysticks is needed (not ready yet)
-  * **__RefreshRoms** creates a ```<lovegame>.love.sh``` script (in ```~/RetroPie/roms/ports/Love2D/```) for every ```<lovegame>.love``` (in ```~/RetroPie/roms/love2d/```), containing the following:
+  * A way to exit the game (usually with ```love.event.quit()```) is needed in order to return to the RGB-Pi UI
+  * Because of the above, a way to globally map Joysticks is not there (yet)
+  * **__RefreshRoms** creates a ```<your_game>.love.sh``` script (in ```~/RetroPie/roms/ports/Love2D/```) for every ```<your_game>.love``` (in ```~/RetroPie/roms/love2d/```), containing the following:
 
 ```shell
 #!/bin/bash
-love ~/RetroPie/roms/love2d/<lovegame>
+love ~/RetroPie/roms/love2d/<your_game>
 ```
 * When developing a game, consider that, inside RGB-Pi OS, it will run at 320x240 (there is no **hdmi_timings** swap so it uses the same as in ```/boot/config.txt```)
 
