@@ -19,14 +19,23 @@ cd ~/love-11.3/roms-refreshed/
 
 echo "function love.load()
   love.graphics.setBackgroundColor(0, 0.5, 0.2)
+  joysticks = love.joystick.getJoysticks()
+  joy1 = joysticks[1]
+  speed = 60
 end
+
+function love.update(dt)
+  if joy1 and joy1:getHat(1) == 'd' then
+      love.event.quit()
+    end
+  end
+end
+
 function love.draw()
   love.graphics.print('$count games have been refreshed!' .. '\n'
-    .. 'Press button 1 to exit (or ESC)', 10, 20)
+    .. 'Press down in joystick (or ESC in keyboard)', 10, 20)
 end
-function love.joystickpressed(joy, btn)
-  if btn == 1 then love.event.quit() end
-end
+
 function love.keypressed(k)
   if k == 'escape' then love.event.quit() end
 end" >> main.lua
