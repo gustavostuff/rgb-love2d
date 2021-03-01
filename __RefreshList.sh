@@ -26,7 +26,7 @@ end
 
 function love.update(dt)
   if joy1 and joy1:getHat(1) == 'd' then
-      love.event.quit()
+    love.event.quit()
   end
 end
 
