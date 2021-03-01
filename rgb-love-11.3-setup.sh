@@ -18,10 +18,10 @@ wget https://raw.githubusercontent.com/tavuntu/rgb-love2d/master/love-11.3.tar.g
 tar -xf love-11.3.tar.gz
 
 sudo ln -s /home/pi/love-11.3/src/love /usr/bin/
-chmod +x __RefreshList.sh
+chmod +x __GenerateScripts.sh
 echo -e "${green}You should see now a green screen in your CRT, go there please.${default}"
-./__RefreshList.sh
-mv __RefreshList.sh ~/RetroPie/roms/ports/Love2D/
+./__GenerateScripts.sh
+mv __GenerateScripts.sh ~/RetroPie/roms/ports/Love2D/
 
 echo "*******************************************************"
 echo -e "${green}Setup completed!${default}"

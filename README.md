@@ -19,7 +19,7 @@ wget https://raw.githubusercontent.com/tavuntu/rgb-love2d/master/rgb-love-11.3-s
 
 Games (.love files) should be placed in ~/RetroPie/roms/love2d/ and, after doing that, you must:
 
-1. Run **__RefreshList** (from RGB-Pi OS, in Ports -> Love2D)
+1. Run **__GenerateScripts** (from RGB-Pi OS, in Ports -> Love2D)
 2. Do a game search again
 
 ### Notes for developers
@@ -28,7 +28,7 @@ Games (.love files) should be placed in ~/RetroPie/roms/love2d/ and, after doing
 
   * A way to exit the game (usually with ```love.event.quit()```) is needed in order to return to the RGB-Pi UI
   * Because of the RetroPie thing, A way to globally map Joysticks is not there (yet)
-  * **__RefreshList** creates a ```<your_game>.love.sh``` script (in ```~/RetroPie/roms/ports/Love2D/```) for every ```<your_game>.love``` (in ```~/RetroPie/roms/love2d/```), containing the following:
+  * **__GenerateScripts** creates a ```<your_game>.love.sh``` script (in ```~/RetroPie/roms/ports/Love2D/```) for every ```<your_game>.love``` (in ```~/RetroPie/roms/love2d/```), containing the following:
 
 ```shell
 #!/bin/bash
