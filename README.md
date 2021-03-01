@@ -28,7 +28,7 @@ Games (.love files) should be placed in ~/RetroPie/roms/love2d/ and, after doing
 
   * A way to exit the game (usually with ```love.event.quit()```) is needed in order to return to the RGB-Pi UI
   * Global mapping for Joysticks is not there (yet)
-  * For every ```*.love``` in ```~/RetroPie/roms/love2d/```, __GenerateScripts creates a ```.love.sh``` file in ```~/RetroPie/roms/ports/Love2D/```:
+  * For every ```.love``` in ```~/RetroPie/roms/love2d/```, __GenerateScripts creates a ```.love.sh``` file in ```~/RetroPie/roms/ports/Love2D/```:
 
 ```shell
 #!/bin/bash
