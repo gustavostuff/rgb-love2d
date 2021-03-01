@@ -34,9 +34,9 @@ function love.update(dt)
 end
 
 function love.draw()
-  love.graphics.print('$count games have been refreshed!' .. '\n' ..
+  love.graphics.print('$count games have been refreshed!\n' ..
     'Now you must go and do a game search again.\n\n\n\n' ..
-    '(To exit, press down in joystick or ESC in keyboard)', 10, 20)
+    'To exit, press down in joystick or ESC in keyboard', 10, 20)
 end
 
 function love.keypressed(k)
