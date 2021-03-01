@@ -21,7 +21,6 @@ echo "function love.load()
   love.graphics.setBackgroundColor(0, 0.5, 0.2)
   joysticks = love.joystick.getJoysticks()
   joy1 = joysticks[1]
-  speed = 60
 end
 
 function love.update(dt)
@@ -31,8 +30,8 @@ function love.update(dt)
 end
 
 function love.draw()
-  love.graphics.print('$count games have been refreshed!' .. '\n'
-    .. 'Press down in joystick (or ESC in keyboard)', 10, 20)
+  love.graphics.print('$count games have been refreshed!' .. '\n' ..
+    'Press down in joystick (or ESC in keyboard)', 10, 20)
 end
 
 function love.keypressed(k)
