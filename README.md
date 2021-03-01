@@ -9,7 +9,7 @@
 * Run:
 
 ```
-wget https://raw.githubusercontent.com/tavuntu/rgb-love2d/master/rgb-love-11.3-setup.sh && chmod +x rgb-love-11.3-setup.sh && ./rgb-love-11.3-setup.sh
+wget https://raw.githubusercontent.com/tavuntu/rgb-love2d/master/rgb-love2d-setup.sh && chmod +x rgb-love2d-setup.sh && ./rgb-love2d-setup.sh
 ```
 * Follow the instructions and enjoy! (Some demos will be placed in Ports -> Love2D)
 
@@ -21,6 +21,8 @@ Games (.love files) should be placed in ~/RetroPie/roms/love2d/ and, after doing
 
 1. Run **__GenerateScripts** (from RGB-Pi OS, in Ports -> Love2D)
 2. Do a game search again
+
+Note: if you're just replacing 1 (or more) .love file with a new one (but same name), you're all set.
 
 ### Notes for developers
 
@@ -42,3 +44,7 @@ love ~/RetroPie/roms/love2d/<your_game>.love
 * [LÖVE](https://love2d.org/)
 * [Raspberry Pi](https://www.raspberrypi.org/)
 * [RetroPie](https://retropie.org.uk/)
+
+---
+
+ :information_source: In order to get a more straight forward solution, a RetroArch core for LÖVE is currently being discussed!
