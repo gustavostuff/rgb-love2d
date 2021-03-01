@@ -1,9 +1,9 @@
 green='\033[0;32m'
 default='\033[0m'
 
-echo -e '${green}Refreshing dependency list...${default}'
+echo -e "${green}Refreshing dependency list...${default}"
 sudo apt-get update
-echo -e '${green}Installing dependencies...${default}'
+echo -e "${green}Installing dependencies...${default}"
 sudo apt-get install build-essential autotools-dev automake libtool \
 pkg-config libfreetype6-dev libluajit-5.1-dev libphysfs-dev libsdl2-dev \
 libopenal-dev libogg-dev libvorbis-dev libmodplug-dev libmpg123-dev \
