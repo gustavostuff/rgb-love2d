@@ -8,10 +8,12 @@ count=0
 for file in *.love ; do
   target="/home/pi/RetroPie/roms/ports/Love2D/$file.sh"
   touch "$target"
-  echo "#!/bin/bash" >> "$target"
-  echo "vcgencmd hdmi_timings 1920 1 48 192 240 240 1 9 5 9 0 0 0 60.0 0 37872000 1" >> "$target"
-  echo "fbset -depth 8 && fbset -depth 24 && fbset -depth 32" >> "$target"
-  echo "love ~/RetroPie/roms/love2d/$file" >> "$target"
+  
+  echo "#!/bin/bash
+  vcgencmd hdmi_timings 1920 1 48 192 240 240 1 9 5 9 0 0 0 60.0 0 37872000 1
+  fbset -depth 8 && fbset -depth 24 && fbset -depth 32
+  love ~/RetroPie/roms/love2d/$file" >> "$target"
+
   chmod +x "$target"
   ((count=count+1))
 done
