@@ -11,10 +11,10 @@ libtheora-dev
 
 cd ~
 
-# get love (precompiled)
+echo -e "${green}Downloading precompiled Love2D binaries...${default}"
 wget https://raw.githubusercontent.com/tavuntu/rgb-love2d/master/love-11.3.tar.gz
 
-# setup love and love games (demos)
+echo -e "${green}Decompressing...${default}"
 tar -xf love-11.3.tar.gz
 
 sudo ln -s /home/pi/love-11.3/src/love /usr/bin/
