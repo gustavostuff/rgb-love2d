@@ -34,7 +34,9 @@ Note: if you're just replacing 1 (or more) .love file with a new one (but same n
 
 ```shell
 #!/bin/bash
-love ~/RetroPie/roms/love2d/<your_game>.love
+vcgencmd hdmi_timings 1920 1 48 192 240 240 1 9 5 9 0 0 0 60.0 0 37872000 1
+fbset -depth 8 && fbset -depth 24 && fbset -depth 32
+love ~/RetroPie/roms/love2d/<your_love_file>
 ```
 * When developing a game, consider that it will run at 320x240 in RGB-Pi OS (there is no **hdmi_timings** swap so it uses the same as in ```/boot/config.txt```). This may change in future versions of this setup.
 
