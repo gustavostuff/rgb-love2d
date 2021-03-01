@@ -10,7 +10,7 @@ for file in *.love ; do
   touch "$target"
 
   echo "#!/bin/bash
-  vcgencmd hdmi_timings 1920 1 48 192 240 240 1 9 5 9 0 0 0 60.0 0 37872000 1
+  vcgencmd hdmi_timings 320 1 10 30 40 240 1 3 4 12 0 0 0 60 0 6400000 1
   fbset -depth 8 && fbset -depth 24 && fbset -depth 32
   love ~/RetroPie/roms/love2d/$file" >> "$target"
 
@@ -36,7 +36,8 @@ end
 function love.draw()
   love.graphics.print('$count games have been refreshed!\n' ..
     'Now you must go and do a game search again.\n\n\n\n' ..
-    'To exit, press down in joystick or ESC in keyboard', 10, 20)
+    'To exit, press down in joystick\n' ..
+    'or ESC in keyboard.', 10, 20)
 end
 
 function love.keypressed(k)
