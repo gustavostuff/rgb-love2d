@@ -1,3 +1,5 @@
+# This is out of date, needs work (it compiles stuff so your RPi may get super hot)
+
 [![logo-rgb-love2d.png](https://i.postimg.cc/8C4cJNzr/logo-rgb-love2d.png)](https://postimg.cc/KKKxCXLZ)
 
 ## LÖVE support for RGB-Pi OS
